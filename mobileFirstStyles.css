@@ -1,0 +1,211 @@
+/* ===========================
+        1. Global Styling
+   ===========================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu";
+  font-size: 1rem;
+  color: #7b7b7b;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===========================
+        2. Typography
+   ===========================
+*/
+header {
+  background-color: #f3f3f3;
+  padding: 2em 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  color: #143774;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.site-subtitle {
+  font-size: 1rem;
+  color: #1792d2;
+  text-transform: uppercase;
+}
+
+.nav-link-list-item,
+.site-subtitle,
+strong {
+  font-weight: 700;
+}
+
+strong {
+  color: #707070;
+}
+/* ===========================
+        3. Layout
+   ===========================
+*/
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+/* Navigation */
+.nav-link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 1em 0;
+}
+
+.nav-link {
+  color: #7b7b7b;
+  margin-top: 1em;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.article-link {
+  color: #1792d2;
+}
+.current-page {
+  --bg-color: #7b7b7b;
+  border-bottom: 2px solid var(--bg-color);
+}
+.current-page:hover,
+.current-page:focus {
+  color: #7b7b7b;
+}
+
+/* Main Section */
+
+article,
+.sidebar {
+  margin: 2em 0 0 0;
+}
+p {
+  line-height: 150%;
+}
+/* Featured Article */
+.article-featured {
+  display: flex;
+  flex-direction: column;
+}
+.article-body,
+.article-info {
+  margin: 1em 0;
+}
+.article-featured-img,
+.article-info {
+  order: -1;
+}
+.article-info {
+  font-size: 0.75rem;
+}
+
+.article-read-more {
+  color: #0d8ace;
+  font-weight: 700;
+  text-decoration: none;
+}
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
+/* Article Recent */
+.aricle-recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.article-recent-img {
+  order: -1;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Sidebar  */
+.flex-start {
+  align-self: flex-start;
+}
+.sidebar-widget {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 20px solid #ebebeb;
+  margin-bottom: 2em;
+}
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+}
+.widget-recent-post-title {
+  margin: 1em 0;
+}
+.widget-recent-post-img {
+  order: -1;
+  height: 150px;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e407a;
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+}
+.footer-text {
+  font-weight: 700;
+}
+
+/* ===========================
+        4. Media Queries
+   ===========================
+*/
+
+/* Desktop Styles */
+
+@media screen and (min-width: 670px) {
+  .container-flex {
+    flex-direction: row;
+  }
+  .nav-link-list {
+    flex-direction: row;
+    gap: 0 1em;
+  }
+  main {
+    width: 63%;
+  }
+  .sidebar {
+    width: 33%;
+  }
+}

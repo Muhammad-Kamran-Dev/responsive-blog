@@ -3,133 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Blog About Food and Work " />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Responsive Mobile First Blog</title>
   </head>
   <body>
-    <!-- Navbar Starts Here -->
+    <!-- Navbar Start -->
     <header>
-      <div class="container container-nav">
-        <div class="site-title">
-          <h1>Living the Social life</h1>
-          <p class="subtitle">A blog exporing minimalism in life</p>
+      <div class="container container-flex">
+        <div class="site-left">
+          <h1 class="site-titel">Living the Social life</h1>
+          <h2 class="site-subtitle">A blog exporing minimalism in life</h2>
         </div>
         <nav>
-          <ul class="nav-list">
-            <li class="nav-list-item"><a href="/">Home</a></li>
-            <li class="nav-list-item"><a href="/aboutme.html">About me</a></li>
-            <li class="nav-list-item current-page">
-              <a href="/recentposts.html">Recent posts</a>
+          <ul class="nav-link-list">
+            <li class="nav-link-list-item">
+              <a class="nav-link current-page" href="/">Home</a>
+            </li>
+            <li class="nav-link-list-item">
+              <a class="nav-link" href="/about.html">About me</a>
+            </li>
+            <li class="nav-link-list-item">
+              <a class="nav-link" href="/recentposts.html">Recent posts</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- Navbar Ends Here -->
+    <!-- Navbar End -->
 
-    <!-- Main Section Starts -->
-    <main>
-      <div class="container blogs-container">
-        <div class="blogs">
-          <!-- Normal Blogs -->
-          <div class="blog">
-            <div class="blog-image">
-              <img src="/img/food.jpg" alt="" />
-              <p class="text-sm">July 23, 2019 | 3 comments</p>
-            </div>
-            <div class="blog-content">
-              <h3>Keeping cooking simple</h3>
-              <p>
-                Food is a very important part of everyone's life. If you want to
-                be healthy, you have to eat healthy. One of the easiest ways to
-                do that is to keep your cooking nice and simple.
-              </p>
-              <a href="#" class="btn">continue reading </a>
-            </div>
-          </div>
-
-          <div class="blog">
-            <div class="blog-image">
-              <img src="/img/work.jpg" alt="" />
-              <p class="text-sm">July 12, 2019 | 3 comments</p>
-            </div>
-            <div class="blog-content">
-              <h3>Simplicity and work</h3>
-              <p>
-                Work is often a major source of stress. People get frustrated,
-                it ruins their relationship with others and it leads to burnout.
-                By keeping your work life as simple as possible, it will help
-                balance everything out. continue reading
-              </p>
-              <a href="#" class="btn">continue reading </a>
-            </div>
-          </div>
-
-          <div class="blog">
-            <div class="blog-image">
-              <img src="/img/deco.jpg" alt="" />
-              <p class="text-sm">July 3, 2019 | 3 comments</p>
-            </div>
-            <div class="blog-content">
-              <h3>Simple decorations</h3>
-              <p>
-                A home isn't a home until you've decorated a little. People
-                either don't decorate, or they go overboard and it doesn't have
-                the impact they were hoping for. Staying simple will help draw
-                the eye where you want it to and make things pop like never
-                before. continue reading
-              </p>
-              <a href="#" class="btn">continue reading </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sidebar Blogs -->
-        <div class="sidebar">
-          <div class="about-me long">
-            <h2>About Me</h2>
-            <img src="/img/about-me.jpg" alt="" />
-            <p>
-              I find life better, and I'm happier, when things are nice and
-              simple.
+    <!-- Main section Start -->
+    <div class="container container-flex flex-start">
+      <main role="main ">
+        <!-- Recent Articles -->
+        <article class="article-recent">
+          <div class="article-recent-main">
+            <h3>Keeping cooking simple</h3>
+            <p class="article-body">
+              Food is a very important part of everyone's life. If you want to
+              be healthy, you have to eat healthy. One of the easiest ways to do
+              that is to keep your cooking nice and simple.
             </p>
+            <a href="/" class="article-read-more"> Continue Reading</a>
           </div>
-          <div class="posts one">
-            <h2>Recent Posts</h2>
-            <div class="post">
-              <img src="/img/life.jpg" alt="" />
-              <p>Keeping cooking simple</p>
-            </div>
+          <div class="article-recent-secondary">
+            <img class="article-recent-img" src="/img/food.jpg" alt="Work " />
+            <p class="article-info">July 23, 2019 | 3 comments</p>
           </div>
-          <div class="posts">
-            <div class="post">
-              <div class="image">
-                <img src="/img/work.jpg" alt="" />
-              </div>
-              <p>Simplicity and work</p>
-            </div>
+        </article>
+        <article class="article-recent">
+          <div class="article-recent-main">
+            <h3>Simplicity and work</h3>
+            <p class="article-body">
+              Work is often a major source of stress. People get frustrated, it
+              ruins their relationship with others and it leads to burnout. By
+              keeping your work life as simple as possible, it will help balance
+              everything out.
+            </p>
+            <a href="/" class="article-read-more"> Continue Reading</a>
           </div>
-          <div class="posts">
-            <div class="post">
-              <img src="/img/deco.jpg" alt="" />
-              <p>Simple decorations</p>
-            </div>
+          <div class="article-recent-secondary">
+            <img class="article-recent-img" src="/img/work.jpg" alt="Work " />
+            <p class="article-info">July 12, 2019 | 3 comments</p>
+          </div>
+        </article>
+        <article class="article-recent">
+          <div class="article-recent-main">
+            <h3>Simple decorations</h3>
+            <p class="article-body">
+              A home isn't a home until you've decorated a little. People either
+              don't decorate, or they go overboard and it doesn't have the
+              impact they were hoping for. Staying simple will help draw the eye
+              where you want it to and make things pop like never before.
+            </p>
+            <a href="/" class="article-read-more"> Continue Reading</a>
+          </div>
+          <div class="article-recent-secondary">
+            <img class="article-recent-img" src="/img/deco.jpg" alt="Work " />
+            <p class="article-info">July 3, 2019 | 3 comments</p>
+          </div>
+        </article>
+      </main>
+
+      <!-- Sidebar Starts Here -->
+      <aside class="sidebar flex-start">
+        <div class="sidebar-widget">
+          <h2 class="widget-title">About Me</h2>
+          <img src="/img/about-me.jpg" alt="person picture" />
+          <p class="widget-body">
+            I find life better, and I'm happier, when things are nice and
+            simple.
+          </p>
+        </div>
+        <div class="sidebar-widget">
+          <h2 class="widget-title">Recent Post</h2>
+          <div class="widget-recent-post">
+            <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
+            <img
+              class="widget-recent-post-img"
+              src="/img/food.jpg"
+              alt="Nature a lamp on a table"
+            />
+          </div>
+          <div class="widget-recent-post">
+            <h3 class="widget-recent-post-title">Simplicity and work</h3>
+            <img
+              class="widget-recent-post-img"
+              src="/img/work.jpg"
+              alt="work"
+            />
+          </div>
+          <div class="widget-recent-post">
+            <h3 class="widget-recent-post-title">Simple decorations</h3>
+            <img
+              class="widget-recent-post-img"
+              src="/img/deco.jpg"
+              alt="deco"
+            />
           </div>
         </div>
-      </div>
-    </main>
-    <!-- Main Section Ends -->
+      </aside>
+    </div>
+    <!-- Main section End -->
 
     <!-- Footer -->
-    <footer>
-      <h3>Living the simple Life</h3>
-      <p>Copyright 2019</p>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">Living the Simple Life</p>
+        <p class="footer-copyright-text">
+          Copyright <span class="year"></span>
+        </p>
+      </div>
     </footer>
+    <script>
+      const year = (document.querySelector(".year").innerText =
+        new Date().getFullYear());
+    </script>
   </body>
 </html>

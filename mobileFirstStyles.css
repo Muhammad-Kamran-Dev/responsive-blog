@@ -202,6 +202,7 @@ p {
     flex-direction: row;
     gap: 0 1em;
   }
+
   main {
     width: 63%;
   }

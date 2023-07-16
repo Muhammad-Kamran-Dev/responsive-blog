@@ -106,7 +106,7 @@ strong {
 /* Main Section */
 
 article,
-.sidebar {
+aside {
   margin: 3em 0 0 0;
 }
 p {
@@ -192,6 +192,11 @@ p {
   font-weight: 700;
 }
 
+/* Utility Classes */
+.text-light-blue {
+  color: #0d8ace;
+}
+
 /* ===========================
         4. Media Queries
    ===========================
@@ -227,5 +232,12 @@ p {
   }
   .article-recent-secondary {
     width: 35%;
+  }
+  .article-recent-img {
+    min-height: 250px;
+    object-fit: cover;
+  }
+  .article-recent:last-child .article-recent-img {
+    object-position: left;
   }
 }
